@@ -1,0 +1,110 @@
+#todoCont{
+    background-color: rgb(83, 111, 204);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo{
+    width: 20rem;
+    height: 30rem;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0.1px 20px rgb(63, 63, 63);
+}
+
+#todoHead{
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#todoForm{
+    display: flex;
+    justify-content: center;
+}
+
+#itemName{
+    width: 12rem;
+    height: 1.5rem;
+    color: rgb(65, 65, 65);
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    border-bottom: 3px solid blueviolet;
+    outline: none;
+    margin: 2px;
+}
+
+#addItem{
+    width: 25px;
+    height: 25px;
+    color: blueviolet;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+    border: 3px solid blueviolet;
+    outline: none;
+    margin-left: 2px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#addItem:hover{
+    
+    color: #00d346;
+    border: 3px solid #00d346;
+}
+
+.delItem{
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 11px;
+    font-weight: bolder;
+    text-align: center;
+    border: 0;
+    outline: none;
+    margin-right: 5px;
+    padding: 0;
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+}
+
+.delItem:hover{
+    
+    background-color: #ff0101c2;
+}
+
+#todoUl{
+    height: 21rem;
+    margin: 0.5rem 2rem;
+    padding: 0;
+    list-style-type: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#todoUl::-webkit-scrollbar{
+    width: 0;
+}
+
+.todoLi{
+    width: 15rem;
+    overflow-wrap: normal;
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

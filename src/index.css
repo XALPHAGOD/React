@@ -1,5 +1,11 @@
-body {
+/* *{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: rgb(234, 245, 255);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +17,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.heading {
+  height: 5rem;
+  color: #fff;
+  background-color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ad0057, 0 0 25px #ad0057, 0 0 30px #ad0057, 0 0 35px #ad0057, 0 0 40px #ad0057;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+
+.imgDiv{
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.leaders_div{
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.leader_div{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .25s ease-in-out;
+}
+
+.leader_img{
+  width: 150px;
+  border-radius: 5px;
+}
+
+.leader_desc{
+  width: 250px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.leader_div:hover{
+  transform: scale(1.2);
+} 

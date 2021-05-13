@@ -1,0 +1,21 @@
+#keep-main-div{
+    height: 100vh;
+    background-color: white;
+    padding: 10px;
+}
+
+#keep-header{
+    height: 50px;
+    background-color: yellow;
+    margin: 0;
+    
+}
+
+#keep-header-title{
+    color: white;
+    margin-left: 1rem;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 2px 5px rgb(255, 217, 0);
+}
