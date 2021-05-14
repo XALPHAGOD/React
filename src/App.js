@@ -15,6 +15,7 @@ import FormComponent from './components/FormComponent';
 
 
 import Todo from './components/Todo';
+import ClassComp from "./components/ClassComp";
 // import Keep from './components/Keep';
 
 
@@ -23,6 +24,7 @@ import Contexts from './components/Contexts';
 import Pokemon from './components/Pokemon';
 import User from "./components/User";
 import Search from "./components/Search";
+import MemeGenerator from "./components/MemeGenerator";
 
 
 
@@ -73,10 +75,12 @@ function App(){
             <Route path="/buttoncomponent" component={ButtonComponent} />
             <Route path="/formcomponent" component={FormComponent} />
             <Route path="/todo" component={Todo} />
+            <Route path="/classComp" component={ClassComp} />
             <Route path="/contexts" component={Contexts} />
             <Route path="/pokemon" component={Pokemon} />
             <Route path="/user/:param1/:param2" component={User} />
             <Route path="/search" component={Search} />
+            <Route path="/meme" component={MemeGenerator} />
             <Route component={Error} />
             {/* <Redirect to="/" /> */}
           </Switch>

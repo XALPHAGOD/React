@@ -31,7 +31,7 @@ const FormComponent= ()=>{
 
         const {name: fieldName,value}= eventObj.target;        //object destructuring
 
-        // console.log(fieldName+" "+value);
+        // console.log(eventObj.target.name);
         
         updUserInfo((prevState)=>{
             // console.log(prevState);
@@ -43,6 +43,7 @@ const FormComponent= ()=>{
     }
     const submitInfo= (evObj)=>{
         evObj.preventDefault();
+        console.log(userInfo);
     }
 
     return (
